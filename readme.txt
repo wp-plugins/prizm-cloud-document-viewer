@@ -15,7 +15,11 @@ Prizm Cloud is a document viewer that enables you to display hundreds of differe
 
 You can view our [demo](http://prizmcloud.accusoft.com/demo.html), our [how-to's](http://prizmcloud.accusoft.com/documentation.html), and our [community](http://prizmcloud.accusoft.com/community/). We also have a [github repository](https://github.com/Accusoft/PrizmCloud-Wordpress) with a wiki.
 
+You will need to [sign up for a Prizm Cloud account](http://prizmcloud.accusoft.com/register.html), but don't worry, there is a free account.
+
 == Installation ==
+
+If you need help installing, please read the WordPress [Managing Plugins](http://codex.wordpress.org/Managing_Plugins) page.
 
 **Manual Installation**
 
@@ -29,7 +33,7 @@ You can view our [demo](http://prizmcloud.accusoft.com/demo.html), our [how-to's
 
 == Frequently asked questions ==
 
-Please visit our [community](http://prizmcloud.accusoft.com/community/) for more faq's.
+Please visit our [community](http://prizmcloud.accusoft.com/community/) for more faq's and for support.
 
 = How do I sign up for Prizm Cloud? =
 
@@ -62,8 +66,8 @@ Prizm Cloud is free for use for any website with less than 5,000 page views per 
 
 == Screenshots ==
 
-1. Wordpress-Admin-Content-Add-Button.png
-2. WordPress-Admin-Plugin-Options.png
+1. Add Prizm Cloud to a page via the content editor button
+2. Prizm Cloud options
 
 == Changelog ==
 
