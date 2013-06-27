@@ -7,7 +7,7 @@ Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Prizm Cloud is a document viewer that enables you to display hundreds of different kinds of files on your website without worrying about installing any additional hardware or software.
+Prizm Cloud is a document viewer that displays over 300 different kinds of files on your website, without any additional software.
 
 == Description ==
 
