@@ -1,7 +1,12 @@
 <?php
+/* Added by Robin */
+
+if (!defined('PRIZMCLOUD_WP_PLUGIN_NAME'))
+    define('PRIZMCLOUD_WP_PLUGIN_NAME', trim(dirname(plugin_basename(__FILE__)), '/'));
+	
 if (!defined('PRIZMCLOUD_WP_PLUGIN_URL'))
 {
-	define('PRIZMCLOUD_WP_PLUGIN_URL', WP_PLUGIN_URL . '/prizmcloud');
+	define('PRIZMCLOUD_WP_PLUGIN_URL', WP_PLUGIN_URL . '/' . PRIZMCLOUD_WP_PLUGIN_NAME);
 }
 
 function prizmcloud_mce_addbuttons()

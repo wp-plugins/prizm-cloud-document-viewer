@@ -9,7 +9,7 @@
 			{
 				ed.windowManager.open(
 				{
-					//file : url.substr(0,url.indexOf("plugins/prizmcloud") + 18) + '/prizmcloud-dialog.php',
+					//file : url.substr(0,url.indexOf("plugins/prizm-cloud-document-viewer") + 18) + '/prizmcloud-dialog.php',
 					file : ajaxurl + '?action=prizmcloud_dialog_window',
 					width : 480 + parseInt(ed.getLang('prizmcloud.delta_width',0)),
 					height : 300 + parseInt(ed.getLang('prizmcloud.delta_height',0)),
@@ -24,7 +24,7 @@
 			{
 				title : 'Prizm Cloud Embedded Document Viewer',
 				cmd : 'mcePrizmCloud',
-				image : url.substr(0,url.indexOf("plugins/prizmcloud") + 18) + '/images/prizmcloud.png'
+				image : url.substr(0,url.indexOf("plugins/prizm-cloud-document-viewer") + 35) + '/images/prizmcloud.png'
 			});
 			ed.onNodeChange.add
 				(function(ed,cm,n)

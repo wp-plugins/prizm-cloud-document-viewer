@@ -54,10 +54,13 @@ function prizmcloud_settings_page()
 	$prizmcloud_settings_page = add_options_page('Prizm Cloud', 'Prizm Cloud', 'manage_options', basename(__FILE__), 'prizmcloud_settings');
 
 }
+if (!defined('PRIZMCLOUD_WP_PLUGIN_NAME'))
+    define('PRIZMCLOUD_WP_PLUGIN_NAME', trim(dirname(plugin_basename(__FILE__)), '/'));
+
 function prizmcloud_settings()
 {
 	if ( function_exists('current_user_can') && !current_user_can('manage_options') ) die(t('An error occurred.'));
 	if (! user_can_access_admin_page()) wp_die('You do not have sufficient permissions to access this page');
 
-	require(ABSPATH. 'wp-content/plugins/prizmcloud/prizmcloud-settings.php');
+	require(ABSPATH. 'wp-content/plugins/'. PRIZMCLOUD_WP_PLUGIN_NAME .'/prizmcloud-settings.php');
 }
