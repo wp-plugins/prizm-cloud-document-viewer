@@ -71,5 +71,6 @@ Prizm Cloud is free for use for any website with less than 5,000 page views per 
 
 == Changelog ==
 
-1.1 Optimizing document viewer for wordpress 
+1.1 Optimizing document viewer for wordpress
+
 1.0.0 Initial Version
