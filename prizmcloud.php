@@ -26,7 +26,8 @@ function prizmcloud_getdocument($atts)
 	), $atts));
 
 	$iframeWidth = $width + 20;
-	$iframeHeight = $height + 20;$integration = "wordpress";
+	$iframeHeight = $height + 20;
+	$integration = "wordpress";
 	$code = "<iframe src=\"http://connect.ajaxdocumentviewer.com/?key=".$key."&viewertype=".$type."&document=".$document."&viewerheight=".$height."&viewerwidth=".$width."&printButton=".$print."&toolbarColor=".$color."&integration=". $integration."\" width=\"".$iframeWidth."\" height=\"".$iframeHeight."\"></iframe>";
 
 	return $code;
