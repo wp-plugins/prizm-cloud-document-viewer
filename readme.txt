@@ -3,7 +3,7 @@ Contributors: Accusoft
 Tags: document viewer, pdf, doc, ppt
 Requires at least: 3.3
 Tested up to: 3.5.1
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -71,4 +71,5 @@ Prizm Cloud is free for use for any website with less than 5,000 page views per 
 
 == Changelog ==
 
-1.0.0 Initial Version
+1.1 Optimizing document viewer for WordPress
+1.0 Initial Version
