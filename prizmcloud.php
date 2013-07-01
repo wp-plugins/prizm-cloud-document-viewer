@@ -6,7 +6,7 @@ Plugin URI: http://prizmcloud.accusoft.com/
 Description: Prizm Cloud enables you to offer high-speed document viewing without worrying about additional hardware or installing software.  The documents stay on your servers, so you can delete, update, edit and change them anytime. We don't keep copies of your documents, so they are always secure!
 Author: Accusoft <prizmcloud@accusoft.com>
 Author URI: http://www.accusoft.com/
-Version: 1.0.0
+Version: 1.1
 License: GPL2
 */
 
