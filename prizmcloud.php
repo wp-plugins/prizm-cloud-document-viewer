@@ -6,7 +6,7 @@ Plugin URI: http://prizmcloud.accusoft.com/
 Description: Prizm Cloud enables you to offer high-speed document viewing without worrying about additional hardware or installing software.  The documents stay on your servers, so you can delete, update, edit and change them anytime. We don't keep copies of your documents, so they are always secure!
 Author: Accusoft <prizmcloud@accusoft.com>
 Author URI: http://www.accusoft.com/
-Version: 1.1
+Version: 1.2
 License: GPL2
 */
 
@@ -22,12 +22,31 @@ function prizmcloud_getdocument($atts)
 		'height' => '',
 		'height' => '',
 		'print' => '',
-		'color' => ''
+		'color' => '',
+		'animtype' => '',
+		'animduration' => '',
+		'animspeed' => '',
+		'automatic' => '',
+		'showcontrols' => '',
+		'centercontrols' => '',
+		'keyboardnav' => '',
+		'hoverpause' => ''
 	), $atts));
-
-	$iframeWidth = $width + 20;
-	$iframeHeight = $height + 20;
-	$code = "<iframe src=\"http://connect.ajaxdocumentviewer.com/?key=".$key."&viewertype=".$type."&document=".$document."&viewerheight=".$height."&viewerwidth=".$width."&printButton=".$print."&toolbarColor=".$color."\" width=\"".$iframeWidth."\" height=\"".$iframeHeight."\"></iframe>";
+	$integration = "wordpress";
+	
+	if (strcmp($type,"slideshow") != 0)
+	{
+		$viewerCode = "//connect.ajaxdocumentviewer.com/?key=".$key."&viewertype=".$type."&document=".$document."&viewerheight=".$height."&viewerwidth=".$width."&printButton=".$print."&toolbarColor=".$color."&integration=".$integration;
+		$iframeWidth = $width + 20;
+		$iframeHeight = $height + 40;
+	}
+	else
+	{
+		$viewerCode = "//connect.ajaxdocumentviewer.com/?key=".$key."&viewertype=".$type."&document=".$document."&viewerheight=".$height."&viewerwidth=".$width."&animtype=".$animtype."&animduration=".$animduration."&animspeed=".$animspeed."&automatic=".$automatic."&showcontrols=".$showcontrols."&centercontrols=".$centercontrols."&keyboardnav=".$keyboardnav."&hoverpause=".$hoverpause."&integration=".$integration;
+		$iframeWidth = $width + 20;
+		$iframeHeight = $height + 20;
+	}
+	$code = "<iframe src=\"".$viewerCode."\" width=\"".$iframeWidth."\" height=\"".$iframeHeight."\"></iframe>";
 
 	return $code;
 }

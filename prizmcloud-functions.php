@@ -90,8 +90,9 @@ function prizmcloud_dialog_window()
 				<tr>
 					<td align=\"right\" class=\"gray dwl_gray\"><strong>Viewer Type:</strong></td>
 					<td valign=\"top\">
-						<input type=\"radio\" value=\"flash\" name=\"viewerType\" checked=\"checked\" /> <span>Flash</span>
-						<input type=\"radio\" value=\"html5\" name=\"viewerType\" /> <span>HTML5</span>
+						<input type=\"radio\" value=\"html5\" name=\"viewerType\" onclick=\"javascript:pcSettings(this.value)\" checked=\"checked\" /> <span>HTML5</span>
+						<input type=\"radio\" value=\"flash\" name=\"viewerType\" onclick=\"javascript:pcSettings(this.value)\" /> <span>Flash</span>
+						<input type=\"radio\" value=\"slideshow\" name=\"viewerType\" onclick=\"javascript:pcSettings(this.value)\" /> <span>Slideshow</span>
 					</td>
 				</tr>
 				<tr>
@@ -102,20 +103,94 @@ function prizmcloud_dialog_window()
 					<td align=\"right\" class=\"gray dwl_gray\"><strong>Viewer Height:</strong></td>
 					<td valign=\"top\"><input name=\"viewerHeight\" type=\"text\" id=\"viewerHeight\" size=\"6\" value=\"800\" />px</td>
 				</tr>
-				<tr>
-					<td align=\"right\" class=\"gray dwl_gray\"><strong>Print Button:</strong></td>
-					<td valign=\"top\">
-						<input type=\"radio\" name=\"viewerPrintButton\" value=\"Yes\" checked=\"checked\" /> <span>Yes</span>
-						<input type=\"radio\" name=\"viewerPrintButton\" value=\"No\" /> <span>No</span>
-					</td>
-				</tr>
-				<tr>
-					<td align=\"right\" class=\"gray dwl_gray\"><strong>Toolbar Color:</strong></td>
-					<td valign=\"top\">
-						<input type=\"text\" id=\"viewerToolbarColor\" name=\"viewerToolbarColor\" value=\"#CCCCCC\" class=\"color\" />
-					</td>
-				</tr>
-			</table>		
+			</table>
+			<div id=\"documentViewer\" class=\"show\">
+				<table>
+					<tr>
+						<td align=\"right\" class=\"gray dwl_gray\"><strong>Print Button:</strong></td>
+						<td valign=\"top\">
+							<input type=\"radio\" name=\"viewerPrintButton\" value=\"Yes\" checked=\"checked\" /> <span>Yes</span>
+							<input type=\"radio\" name=\"viewerPrintButton\" value=\"No\" /> <span>No</span>
+						</td>
+					</tr>
+					<tr>
+						<td align=\"right\" class=\"gray dwl_gray\"><strong>Toolbar Color:</strong></td>
+						<td valign=\"top\">
+							<input type=\"text\" id=\"viewerToolbarColor\" name=\"viewerToolbarColor\" value=\"#CCCCCC\" class=\"color\" />
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div id=\"slideshowViewer\" class=\"hide\">
+				<table>
+					<tr>
+						<td align=\"right\" class=\"gray dwl_gray\"><strong>Animation Type:</strong></td>
+						<td valign=\"top\">
+							<select id=\"viewerAnimType\" name=\"viewerAnimType\">
+							<option value=\"slide\">Slide</option>
+							<option value=\"fade\">Fade</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td align=\"right\" valign=\"top\" class=\"gray dwl_gray\"><strong>Animation Duration:</strong></td>
+						<td valign=\"top\">
+							<input type=\"text\" id=\"viewerAnimDuration\" name=\"viewerAnimDuration\" value=\"450\" /><br /><em>(Note: # in milliseconds)</em>
+						</td>
+					</tr>
+					<tr>
+						<td align=\"right\" valign=\"top\" class=\"gray dwl_gray\"><strong>Animation Speed:</strong></td>
+						<td valign=\"top\">
+							<input type=\"text\" id=\"viewerAnimSpeed\" name=\"viewerAnimSpeed\" value=\"4000\" /><br /><em>(Note: # in milliseconds)</em>
+						</td>
+					</tr>
+					<tr>
+						<td align=\"right\" class=\"gray dwl_gray\"><strong>Start Automatically:</strong></td>
+						<td valign=\"top\">
+							<select id=\"viewerAutomatic\" name=\"viewerAutomatic\">
+							<option value=\"yes\">Yes</option>
+							<option value=\"no\">No</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td align=\"right\" class=\"gray dwl_gray\"><strong>Show Controls:</strong></td>
+						<td valign=\"top\">
+							<select id=\"viewerShowControls\" name=\"viewerShowControls\">
+							<option value=\"yes\">Yes</option>
+							<option value=\"no\">No</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td align=\"right\" class=\"gray dwl_gray\"><strong>Center Controls: (if shown)</strong></td>
+						<td valign=\"top\">
+							<select id=\"viewerCenterControls\" name=\"viewerCenterControls\">
+							<option value=\"yes\">Yes</option>
+							<option value=\"no\">No</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td align=\"right\" class=\"gray dwl_gray\"><strong>Allow Keyboard Navigation:</strong></td>
+						<td valign=\"top\">
+							<select id=\"viewerKeyboardNav\" name=\"viewerKeyboardNav\">
+							<option value=\"yes\">Yes</option>
+							<option value=\"no\">No</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td align=\"right\" class=\"gray dwl_gray\"><strong>Pause on Hover:</strong></td>
+						<td valign=\"top\">
+							<select id=\"viewerHoverPause\" name=\"viewerHoverPause\">
+							<option value=\"yes\">Yes</option>
+							<option value=\"no\">No</option>
+							</select>
+						</td>
+					</tr>
+				</table>
+			</div>
 			
 			<fieldset>
 				<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"5\">

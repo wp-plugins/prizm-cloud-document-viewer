@@ -85,4 +85,16 @@ span.colorChooser
     overflow: visible;
     vertical-align: middle;
     z-index:1;
-}     
+}
+
+.show
+{
+	display: block;
+	visibility: visible;
+}
+
+.hide
+{
+	display: none;
+	visibility: hidden;
+}
