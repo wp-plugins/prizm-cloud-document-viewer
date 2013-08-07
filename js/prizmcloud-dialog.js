@@ -23,11 +23,43 @@ var PrizmCloudInsertDialog =
 		jQuery('#viewerToolbarColor').blur(function()
 		{
 			buildShortcode();
-		});	
+		});
 		jQuery('#viewerDocument').blur(function()
 		{
 			buildShortcode();
 		});
+		jQuery('#viewerAnimType').change(function()
+		{
+			buildShortcode();
+		});
+		jQuery('#viewerAnimDuration').blur(function()
+		{
+			buildShortcode();
+		});
+		jQuery('#viewerAnimSpeed').blur(function()
+		{
+			buildShortcode();
+		});
+		jQuery('#viewerAutomatic').change(function()
+		{
+			buildShortcode();
+		});
+		jQuery('#viewerShowControls').change(function()
+		{
+			buildShortcode();
+		});
+		jQuery('#viewerCenterControls').change(function()
+		{
+			buildShortcode();
+		});
+		jQuery('#viewerKeyboardNav').change(function()
+		{
+			buildShortcode();
+		});
+		jQuery('#viewerHoverPause').change(function()
+		{
+			buildShortcode();
+		});		
 	},
 	insert : function()
 	{
@@ -36,7 +68,21 @@ var PrizmCloudInsertDialog =
 		tinyMCEPopup.close();
 	}
 };
-		
+
+function pcSettings(viewerType)
+{
+	if (viewerType == "slideshow")
+	{
+		jQuery("#slideshowViewer").removeClass("hide").addClass("show");
+		jQuery("#documentViewer").removeClass("show").addClass("hide");
+	}
+	else
+	{
+		jQuery("#slideshowViewer").removeClass("show").addClass("hide");
+		jQuery("#documentViewer").removeClass("hide").addClass("show");
+	}
+}
+
 function buildShortcode()
 {
 	var shortcode = 'prizmcloud';			
@@ -48,6 +94,15 @@ function buildShortcode()
 	var toolbarColor = jQuery("#viewerToolbarColor").val();
 	toolbarColor = toolbarColor.replace("#","");
 	var printButton = jQuery("input[name=viewerPrintButton]:checked").val();
+	
+	var animType = jQuery("#viewerAnimType").val();
+	var animDuration = jQuery("#viewerAnimDuration").val();
+	var animSpeed = jQuery("#viewerAnimSpeed").val();
+	var automatic = jQuery("#viewerAutomatic").val();
+	var showControls = jQuery("#viewerShowControls").val();
+	var centerControls = jQuery("#viewerCenterControls").val();
+	var keyboardNav = jQuery("#viewerKeyboardNav").val();
+	var hoverPause = jQuery("#viewerHoverPause").val();
 	
 	if (licenseKey.length > 0)
 	{
@@ -74,14 +129,59 @@ function buildShortcode()
 		shortcode += ' height="' + viewerHeight + '"';
 	}
 	
-	if (printButton.length > 0)
+	if (viewerType != 'slideshow')
 	{
-		shortcode += ' print="' + printButton + '"';
+		if (printButton.length > 0)
+		{
+			shortcode += ' print="' + printButton + '"';
+		}
+		
+		if (toolbarColor.length > 0)
+		{
+			shortcode += ' color="' + toolbarColor + '"';
+		}
 	}
-	
-	if (toolbarColor.length > 0)
+	else
 	{
-		shortcode += ' color="' + toolbarColor + '"';
+		if (animType.length > 0)
+		{
+			shortcode += ' animtype="' + animType + '"';
+		}
+		
+		if (animDuration.length > 0)
+		{
+			shortcode += ' animduration="' + animDuration + '"';
+		}
+		
+		if (animSpeed.length > 0)
+		{
+			shortcode += ' animspeed="' + animSpeed + '"';
+		}
+		
+		if (automatic.length > 0)
+		{
+			shortcode += ' automatic="' + automatic + '"';
+		}
+		
+		if (showControls.length > 0)
+		{
+			shortcode += ' showcontrols="' + showControls + '"';
+		}
+		
+		if (centerControls.length > 0)
+		{
+			shortcode += ' centercontrols="' + centerControls + '"';
+		}
+		
+		if (keyboardNav.length > 0)
+		{
+			shortcode += ' keyboardnav="' + keyboardNav + '"';
+		}
+		
+		if (hoverPause.length > 0)
+		{
+			shortcode += ' hoverpause="' + hoverPause + '"';
+		}
 	}
 	
 	jQuery('#shortcode').val('['+shortcode+']');

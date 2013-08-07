@@ -11,8 +11,8 @@
 				{
 					//file : url.substr(0,url.indexOf("plugins/prizm-cloud-document-viewer") + 18) + '/prizmcloud-dialog.php',
 					file : ajaxurl + '?action=prizmcloud_dialog_window',
-					width : 480 + parseInt(ed.getLang('prizmcloud.delta_width',0)),
-					height : 300 + parseInt(ed.getLang('prizmcloud.delta_height',0)),
+					width : 600 + parseInt(ed.getLang('prizmcloud.delta_width',0)),
+					height : 460 + parseInt(ed.getLang('prizmcloud.delta_height',0)),
 					inline : 1
 				},
 				{
@@ -42,8 +42,8 @@
 					longname : 'Prizm Cloud Embedded Document Viewer',
 					author : 'Accusoft Corporation',
 					authorurl : 'http://www.accusoft.com',
-					infourl : 'http://prizmcloud.accusoft.com',
-					version : "1.0.0"
+					infourl : 'http://www.prizmcloud.com',
+					version : "1.2"
 			};
 		}
 	});
