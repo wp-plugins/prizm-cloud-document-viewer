@@ -22,12 +22,12 @@
 ?>
 <div class="wrap">
 	<div id="icon-options-general" class="icon32"><br/></div>
-	<h2>Prizm Cloud - Embedded Document Viewer</h2>
+	<h2>Prizm Viewer - Document Viewer</h2>
 	
 	<form name="form" method="post" action="">
 	<input type="hidden" name="prizmcloud_settings_update" value="1">
 	
-	<p>In order to use Prizm Cloud, the Embedded Document Viewer, you'll need to first get a license key.  Don't worry - it's completely free!  You can get your key here: <a href="http://prizmcloud.accusoft.com/register.html" target="_blank">http://prizmcloud.accusoft.com/register.html</a>.</p>
+	<p>In order to use Prizm Viewer, the Document Viewer, you'll need to first get a license key.  Don't worry - it's completely free!  You can get your key here: <a href="http://www.prizmviewer.com/plugins/documentation/signup.html" target="_blank">http://www.prizmviewer.com/plugins/documentation/signup.html</a>.</p>
 	<p>Once your sign up is complete, enter your key in the box below.</p>
 	
 	<h3>Settings</h3>

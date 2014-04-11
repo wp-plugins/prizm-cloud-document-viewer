@@ -1,12 +1,12 @@
 <?php
 
 /*
-Plugin Name: Prizm Cloud Embedded Document Viewer
-Plugin URI: http://prizmcloud.accusoft.com/
-Description: Prizm Cloud enables you to offer high-speed document viewing without worrying about additional hardware or installing software.  The documents stay on your servers, so you can delete, update, edit and change them anytime. We don't keep copies of your documents, so they are always secure!
+Plugin Name: Prizm Viewer
+Plugin URI: http://prizmviewer.com/
+Description: Prizm Viewer enables you to offer high-speed document viewing without worrying about additional hardware or installing software.  The documents stay on your servers, so you can delete, update, edit and change them anytime. We don't keep copies of your documents, so they are always secure!
 Author: Accusoft <prizmcloud@accusoft.com>
 Author URI: http://www.accusoft.com/
-Version: 1.2
+Version: 1.3
 License: GPL2
 */
 
