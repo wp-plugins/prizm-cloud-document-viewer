@@ -37,7 +37,7 @@ Please visit our [community](http://community.prizmcloud.com/) for more faq's an
 
 = How do I sign up for Prizm Viewer? =
 
-You will need to sign up for free a Prizm Cloud account to begin using the Prizm Viewer plugin. Please visit the [Prizm Cloud Sign Up Page](http://www.prizmviewer.com/plugins/documentation/signup.html) to get started.
+You will need to sign up for free a Prizm Cloud account to begin using the Prizm Viewer plugin. Please visit the [Prizm Cloud Sign Up Page](http://accounts.prizmcloud.com/?type=viewer) to get started.
 
 = Does Prizm Viewer cost money? =
 
