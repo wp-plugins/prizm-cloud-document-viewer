@@ -61,7 +61,7 @@ function prizmcloud_dialog_window()
 		<head>
 			<meta charset=\"utf-8\">
 			<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">
-			<title>Prizm Cloud Embedded Document Viewer</title>
+			<title>Prizm Viewer Document Viewer</title>
 			<link href=\"".PRIZMCLOUD_WP_PLUGIN_URL."/css/mcColorPicker.css\" type=\"text/css\" rel=\"stylesheet\" />
 			<script type=\"text/javascript\" src=\"".JS_PLUGIN_URL."/jquery/jquery.js\"></script>
 			<script type=\"text/javascript\" src=\"".PRIZMCLOUD_WP_PLUGIN_URL."/js/tiny_mce_popup.js\"></script>
