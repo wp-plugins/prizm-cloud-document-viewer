@@ -6,11 +6,33 @@ Plugin URI: http://prizmviewer.com/
 Description: Prizm Viewer enables you to offer high-speed document viewing without worrying about additional hardware or installing software.  The documents stay on your servers, so you can delete, update, edit and change them anytime. We don't keep copies of your documents, so they are always secure!
 Author: Accusoft <prizmcloud@accusoft.com>
 Author URI: http://www.accusoft.com/
-Version: 1.3
+Version: 1.4
 License: GPL2
 */
 
 include_once('prizmcloud-functions.php');
+
+register_activation_hook( __FILE__, 'prizmcloud_plugin_activate' );   
+function prizmcloud_plugin_activate() {
+  //$notices= get_option('prizmcloud_deferred_admin_notices', array());
+  //$notices[]= "You've successfully installed the Prizm Cloud Viewer. You're almost done! All you need to do now is get your key here: ";
+  //update_option('prizmcloud_deferred_admin_notices', $notices);
+}
+
+add_action('admin_notices', 'prizmcloud_admin_notices');
+function prizmcloud_admin_notices() {
+  //if ($notices= get_option('prizmcloud_deferred_admin_notices')) {
+  //    foreach ($notices as $notice) {
+  //    echo "<div class='updated' style='border-style:solid;border-color:0xff6600'><p><img src=" . plugins_url( 'images/accusoft_logo_wordpress_admin.png' , __FILE__ ) . ">$notice <a href=''>Get my key</a></p></div>";
+  //    }
+  //  delete_option('prizmcloud_deferred_admin_notices');
+  //}
+}
+
+register_deactivation_hook(__FILE__, 'prizmcloud_plugin_deactivate');
+function prizmcloud_plugin_deactivate() {
+//  delete_option('prizmcloud_deferred_admin_notices'); 
+}
 
 function prizmcloud_getdocument($atts)
 {
@@ -19,7 +41,6 @@ function prizmcloud_getdocument($atts)
 		'document' => '',
 		'type' => '',
 		'width' => '',
-		'height' => '',
 		'height' => '',
 		'print' => '',
 		'color' => '',
@@ -46,8 +67,12 @@ function prizmcloud_getdocument($atts)
 		$iframeWidth = $width + 20;
 		$iframeHeight = $height + 20;
 	}
-	$code = "<iframe src=\"".$viewerCode."\" width=\"".$iframeWidth."\" height=\"".$iframeHeight."\"></iframe>";
-
+        if ($type == "flash" && $width < 650) {
+	    $code = "<div id=\"widtherror\" width=\"600\" height=\"100\">Prizm Viewer Error: Please choose a width of 650px or greater for your Prizm Flash Viewer, or select the HTML5 viewer if you need a smaller size</div>";
+        }
+        else {
+  	    $code = "<iframe src=\"".$viewerCode."\" width=\"".$iframeWidth."\" height=\"".$iframeHeight."\"></iframe>";
+        }
 	return $code;
 }
 

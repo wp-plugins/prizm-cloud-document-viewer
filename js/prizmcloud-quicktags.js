@@ -1,1 +1,1 @@
-edButtons[edButtons.length] = new edButton('ed_pc','prizmcloud','[prizmcloud document="','"]','1');
+edButtons[edButtons.length] = new edButton('ed_pc','prizmcloud','[prizmcloud key="" width="" height="" type="" document="','"]','1');
