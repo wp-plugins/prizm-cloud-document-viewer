@@ -15,7 +15,7 @@ Prizm Viewer is a document viewer that enables you to display hundreds of differ
 
 You can view our [demo](http://www.prizmviewer.com/demo.html), our [how-to's](http://www.prizmviewer.com/documentation.html), and our [community](http://community.prizmcloud.com/). We also have a [github repository](https://github.com/Accusoft/PrizmCloud-Wordpress) with a wiki.
 
-First, you will need to [sign up for free a Prizm Cloud account](http://accounts.prizmcloud.com/?type=viewer) to begin using the Prizm Viewer plugin.
+First, you will need to [sign up for free a Cloud Services account](http://cloudportal.accusoft.com/?type=viewer) to begin using the Prizm Viewer plugin.
 
 == Installation ==
 
