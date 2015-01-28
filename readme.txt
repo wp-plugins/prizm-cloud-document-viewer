@@ -11,11 +11,13 @@ Prizm Viewer is a document viewer that displays over 300 different kinds of file
 
 == Description ==
 
+**We have upgraded to a new plugin for WordPress 4.0+ with new branding and improvements: [ACS Viewer](https://wordpress.org/plugins/accusoft-cloud-services-viewer/)**
+
 Prizm Viewer is a document viewer that enables you to display hundreds of different kinds of files on your website without worrying about whether your visitors have the software to view them and without installing any additional hardware or software. The document files stay on your server, so you can update, edit and change them anytime. Prizm Viewer supports more than 300 file types, including DOC, PDF, PPT, XLS and CAD.
 
-You can view our [demo](http://www.prizmviewer.com/demo.html), our [how-to's](http://www.prizmviewer.com/documentation.html), and our [community](http://community.prizmcloud.com/). We also have a [github repository](https://github.com/Accusoft/PrizmCloud-Wordpress) with a wiki.
+You can view our [demo](http://www.prizmviewer.com/demo.html), our [how-to's](http://www.prizmviewer.com/documentation.html), and our [community](http://community.prizmcloud.com/). 
 
-First, you will need to [sign up for free a Cloud Services account](http://cloudportal.accusoft.com/?type=viewer) to begin using the Prizm Viewer plugin.
+First, you will need to [sign up for free a Prizm Cloud account](http://cloudportal.accusoft.com/?type=viewer) to begin using the Prizm Viewer plugin.
 
 == Installation ==
 
@@ -70,6 +72,8 @@ Prizm Viewer is free for use for any website with less than 5,000 page views per
 2. Prizm Viewer options
 
 == Changelog ==
+1.4 Minor updates to plugin
+
 1.3 Minor rebranding from Prizm Cloud to Prizm Viewer
 
 1.2 Adding Slideshow feature
