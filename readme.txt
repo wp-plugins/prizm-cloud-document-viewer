@@ -2,8 +2,8 @@
 Contributors: Accusoft
 Tags: document viewer, pdf, doc, ppt
 Requires at least: 3.3
-Tested up to: 3.9.1
-Stable tag: 1.4
+Tested up to: 4.2.2
+Stable tag: 1.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -11,11 +11,9 @@ Prizm Viewer is a document viewer that displays over 300 different kinds of file
 
 == Description ==
 
-**We have upgraded to a new plugin for WordPress 4.0+ with new branding and improvements: [ACS Viewer](https://wordpress.org/plugins/accusoft-cloud-services-viewer/)**
-
 Prizm Viewer is a document viewer that enables you to display hundreds of different kinds of files on your website without worrying about whether your visitors have the software to view them and without installing any additional hardware or software. The document files stay on your server, so you can update, edit and change them anytime. Prizm Viewer supports more than 300 file types, including DOC, PDF, PPT, XLS and CAD.
 
-You can view our [demo](http://www.prizmviewer.com/demo.html), our [how-to's](http://www.prizmviewer.com/documentation.html), and our [community](http://community.prizmcloud.com/). 
+You can view our [demo](http://www.prizmviewer.com/demo.html), our [how-to's](http://www.prizmviewer.com/documentation.html), and our [community](https://accusofthelp.zendesk.com/hc/communities/public/questions).
 
 First, you will need to [sign up for free a Prizm Cloud account](http://cloudportal.accusoft.com/?type=viewer) to begin using the Prizm Viewer plugin.
 
@@ -55,9 +53,10 @@ Prizm Viewer is free for use for any website with less than 5,000 page views per
 
 1. Click on Pages or Posts in navigation
 2. Open an existing page/post or create a new one
-3. Within the content editor, click on the Prizm Viewer Button
-4. Fill in Fields and insert
-5. Save page
+3. Within the content editor, click on the Insert Document Viewer Button
+4. Customize  your viewer
+5. Click "Get code"
+6. The shortcode that generates your viewer will automatically be inserted into your post.
 
 = How do I get my Prizm Viewer Key? =
 
@@ -69,9 +68,11 @@ Prizm Viewer is free for use for any website with less than 5,000 page views per
 == Screenshots ==
 
 1. Add Prizm Viewer to a page via the content editor button
-2. Prizm Viewer options
+2. Prizm Viewer configuration options
 
 == Changelog ==
+1.7 Added interactive viewer configuration tool, wider control of viewer configuration options and a new shortcode
+
 1.4 Minor updates to plugin
 
 1.3 Minor rebranding from Prizm Cloud to Prizm Viewer
