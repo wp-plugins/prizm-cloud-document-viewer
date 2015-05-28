@@ -3,7 +3,7 @@ Contributors: Accusoft
 Tags: document viewer, pdf, doc, ppt
 Requires at least: 3.3
 Tested up to: 4.2.2
-Stable tag: 1.7
+Stable tag: 1.71
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -71,6 +71,8 @@ Prizm Viewer is free for use for any website with less than 5,000 page views per
 2. Prizm Viewer configuration options
 
 == Changelog ==
+1.7.1 Minor bug fixes
+ 
 1.7 Added interactive viewer configuration tool, wider control of viewer configuration options and a new shortcode
 
 1.4 Minor updates to plugin
