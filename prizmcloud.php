@@ -83,7 +83,7 @@ function prizmcloud_getdocument($atts)
 add_shortcode('prizmcloud', 'prizmcloud_getdocument');
 
 // Add Quicktag for Prizm Cloud Admin
-add_action('admin_print_scripts','prizmcloud_admin_print_scripts');
+//add_action('admin_print_scripts','prizmcloud_admin_print_scripts');
 
 // Activate Shortcode to Retrive Document with ACS Viewer
 add_shortcode('acsviewer', 'acsviewer_getdocument');
